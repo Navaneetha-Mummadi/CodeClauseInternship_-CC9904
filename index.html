@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="h1">RECIPE BOOK</h1>
+
+    <div id="recipe-form">
+        <h2 id="h2">Add/Edit Recipe</h2>
+        <input type="text" id="recipe-name" placeholder="Recipe Name">
+        <br><br>
+        <textarea id="recipe-ingredients" placeholder="Ingredients"></textarea>
+        <br><br>
+        <textarea id="recipe-instructions" placeholder="Instructions"></textarea>
+        <br><br>
+        <input type="file" id="recipe-image">
+        <br><br>
+        <button onclick="saveRecipe()" id="button">Save Recipe</button>
+        <button onclick="cancelEdit()" id="button">Cancel</button> 
+    </div>
+
+    <div id="recipe-list">
+        <h2 id="h3">Recipes</h2>
+        <ul id="recipe-display"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
